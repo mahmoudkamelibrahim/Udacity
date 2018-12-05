@@ -1,0 +1,22 @@
+﻿Model Description
+
+These are the most important step we should do to generate a trajectory.
+
+Check all lanes if they are empty in the next 30 m in front of the car and 6m behind the car and record the behind car speed if it exceeded Carla speed.
+
+Decide to keep lane , decelerate , accelerate or change lane depending on lanes status and other cars speed.
+
+Create a list of widely spaced (x,y) way points, evenly spaced at 30m , 60m , 90m in front of the car (in s) and in the middle of the lane (in d) besides current point and last one.
+
+ Convert This Frenet space to XY space w.r.t. the car.
+
+ Use spline to convert these 5 points to a feasible polynomial 
+
+For a target point in front of the car (30m in front), output 50 trajectory points using this polynomial taking in consideration the last way-points and current cmd_vel.
+
+Converting back the trajectory points to be absolute in road map instead of car-frame.
+
+What can be done in the final project:
+Adding prediction module will be a great add-up to the planner.
+Adding a cost function for  lanes instead of if conditions.
+
