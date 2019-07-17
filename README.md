@@ -1,7 +1,7 @@
 # Udacity
 # Udacity projects of 2 nanodegrees :
-   1. self driving car engineer nanodegree
-   1. sensor fusion engineer nanodegree
+   ## self driving car engineer nanodegree
+   ## sensor fusion engineer nanodegree
    
    
    # 1- self driving car engineer nanodegree
